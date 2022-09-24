@@ -4,22 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto</title>
-    <link rel="stylesheet" href="/TP-FullStack-CAC/assets/style.css" />
+    <title>Coco Clocks</title>
+
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gudea:ital,wght@0,400;0,700;1,400&family=The+Nautigal:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="parent">
-      <header>
-        <div class="div1">Header</div>
-        <div class="div2">Nav</div>
-      </header>
-      <main>
-        <div class="div4">Main</div>
-        <div class="div5">Main</div>
-      </main>
-      <footer>
-        <div class="div3">Soy el footer</div>
-      </footer>
-    </div>
+    <header>
+      <div class="nav-container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Soy el main</h1>
+      <h2>Coco's Clocks</h2>
+      <div class="carrousel">
+        <div class="conteCarrousel">
+          <div class="itemCarrousel" id="itemCarrousel-1">
+            <div class="itemCarrouselTarjeta">A</div>
+            <div class="itemCarrouselArrows">
+              <a href="#itemCarrousel-3">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a href="#itemCarrousel-2">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="itemCarrousel" id="itemCarrousel-2">
+            <div class="itemCarrouselTarjeta">B</div>
+            <div class="itemCarrouselArrows">
+              <a href="#itemCarrousel-1">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a href="#itemCarrousel-3">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="itemCarrousel" id="itemCarrousel-3">
+            <div class="itemCarrouselTarjeta">C</div>
+            <div class="itemCarrouselArrows">
+              <a href="#itemCarrousel-2">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a href="#itemCarrousel-1">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="conteCarrouselController">
+          <a href="#itemCarrousel-1">•</a>
+          <a href="#itemCarrousel-2">•</a>
+          <a href="#itemCarrousel-3">•</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="colum1">
+            <h1>Mas informacion de la compañia</h1>
+            <p>
+              Esta compañia se dedica a la venta de software integrado con un
+              conjunto de cosas que no se lo que estoy escribiendo, este texto
+              es solo para llenara informacion en el cuadro de informacion de la
+              compañia.
+            </p>
+          </div>
+          <div class="colum2">
+            <h1>Redes Sociales</h1>
+            <div class="row">
+              <img src="/assets/icon/facebook.png" />
+              <label>Siguenos en Facebook</label>
+            </div>
+            <div class="row">
+              <img src="/assets/icon/twitter.png" />
+              <label>Siguenos en Twitter</label>
+            </div>
+            <div class="row">
+              <img src="/assets/icon/instagram.png" />
+              <label>Siguenos en Instagram</label>
+            </div>
+            <div class="row">
+              <img src="/assets/icon/google-plus.png" />
+              <label>Siguenos en Google Plus</label>
+            </div>
+            <div class="row">
+              <img src="/assets/icon/pinterest.png" />
+              <label>Siguenos en Pinteres</label>
+            </div>
+          </div>
+          <div class="colum3">
+            <h1>Informacion Contactos</h1>
+            <div class="row2">
+              <img src="/assets/icon/house.png" />
+              <label
+                >La Romana, Republica Dominicana Manuel del Cabral Casa #
+                27</label
+              >
+            </div>
+            <div class="row2">
+              <img src="/assets/icon/smartphone.png" />
+              <label>+1-829-395-2064</label>
+            </div>
+            <div class="row2">
+              <img src="/assets/icon/contact.png" />
+              <label>Cristiancedano1030@gmail.com</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="copyright">
+            © 2017 Todos los Derechos Reservados | <a href="">Magtimus</a>
+          </div>
+
+          <div class="information">
+            <a href="">Informacion Compañia</a> |
+            <a href="">Privacion y Politica</a> |
+            <a href="">Terminos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/887a835504.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
