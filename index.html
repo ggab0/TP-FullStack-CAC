@@ -11,19 +11,28 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gudea:ital,wght@0,400;0,700;1,400&family=The+Nautigal:wght@700&display=swap"
       rel="stylesheet"
-    />
-  </head>
+    
+      />
+    	<script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("abajo",window.scrollY>0);
+        })
+      </script>
+    </head>
   <body>
     <header>
-      <div class="nav-container">
+      <a href="#" class="logo">COCO CLOCKS</a>
+      <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
+    <section class="zona1"></section>
     <main>
       <h1>Soy el main</h1>
       <h2>Coco's Clocks</h2>
