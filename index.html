@@ -18,23 +18,52 @@
         })
       </script>
     </head>
-  <body>
+  <body id="body">
     <header>
       <a href="#" class="logo">COCO CLOCKS</a>
       <nav>
-        <div class="bars__menu">
-          <span class="line1__bars-menu"></span>
-          <span class="line2__bars-menu"></span>
-          <span class="line3__bars-menu"></span>
-      </div>
-      <script src="assets/script.js"></script>
+        
+      
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Nosotros</a></li>
           <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Contacto</a></li>   
         </ul>
+        <div class="bars__menu" id="btn_open">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
+        <script src="assets/script2.js"></script>
       </nav>
+    <div class="menu__side" id="menu_side">
+        <div class="options__menu">	
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-video" title="Cursos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+    </div>
     </header>
     <section class="zona1">
     </section>
@@ -120,7 +149,7 @@
             </div>
             <div class="row">
               <img src="assets/icon/pinterest.png" />
-              <label>Siguenos en Pinteres</label>
+              <label>Siguenos en Pinterest</label>
             </div>
           </div>
           <div class="colum3">
@@ -156,9 +185,8 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/887a835504.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://kit.fontawesome.com/887a835504.js"
+      crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    </body>
 </html>

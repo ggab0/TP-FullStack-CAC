@@ -1,11 +1,38 @@
-document.querySelector(".bars__menu").addEventListener("click", animateBars);
+//Ejecutar función en el evento click
+document.getElementById("btn_open").addEventListener("click", open_close_menu);
 
-var line1__bars = document.querySelector(".line1__bars-menu");
-var line2__bars = document.querySelector(".line2__bars-menu");
-var line3__bars = document.querySelector(".line3__bars-menu");
+//Declaramos variables
+var menu_side = document.getElementById("menu__side");
+var btn_open = document.getElementById("btn_open");
+var body = document.getElementById("body");
 
-function animateBars(){
-    line1__bars.classList.toggle("activeline1__bars-menu");
-    line2__bars.classList.toggle("activeline2__bars-menu");
-    line3__bars.classList.toggle("activeline3__bars-menu");
+//Evento para mostrar y ocultar menú
+    function open_close_menu(){
+        body.classList.toggle("body_move");
+        menu_side.classList.toggle("menu__side_move");
+    }
+
+//Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
+
+if (window.innerWidth < 760){
+    body.classList.toggle("body");
+    menu_side.classList.toggle("menu_side");
 }
+
+//Haciendo el menú responsive(adaptable)
+
+// window.addEventListener("click", function(){
+
+//     if (window.innerWidth > 760){
+
+//         body.classList.remove("body_move");
+//         side_menu.classList.remove("menu__side_move");
+//     }
+
+//     if (window.innerWidth < 760){
+
+//         body.classList.add("body_move");
+//         side_menu.classList.add("menu__side_move");
+//     }
+
+// });
