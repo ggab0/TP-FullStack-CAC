@@ -141,6 +141,7 @@ a.selected{
 header.abajo{
   background: #fff;
   padding: 15px 20px;
+
 }
 header .logo{
   position: relative;
@@ -179,11 +180,9 @@ header ul li a{
   transition: 0.7s;
 }
 .bars__menu{
-  width: 3em;
-  height: 2em;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: 90px;
-  left: 100%;
   transform: translate(-50%, -50%) scale(6);
   cursor: pointer;
   display: none;
@@ -191,16 +190,18 @@ header ul li a{
 
 .bars__menu span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 10px;
+  height: 1px;
   background: #ffffff;
-  margin-top: 4px;
+  margin-top: 2px;
   transform-origin: 0px 100%;
   transition: all 300ms;
+
 }
 
 .activeline1__bars-menu{
-  transform: rotate(45deg) translate(-2px, 1px); 
+  transform: rotate(45deg) translate(-1px, -2px); 
+  transform: scaleX(1px);
 }
 
 .activeline2__bars-menu{
@@ -209,7 +210,7 @@ header ul li a{
 }
 
 .activeline3__bars-menu{
-  transform: rotate(-45deg) translate(-4px, 2px);
+  transform: rotate(-45deg) translate(-0px, 1px);
 }
 .zona1{
   position: relative;
@@ -222,6 +223,15 @@ header ul li a{
 header.abajo .logo,
 header.abajo ul li a{
   color: #000;
+}
+header.abajo .line1__bars-menu{
+  background-color: #000;
+}
+header.abajo .line2__bars-menu{
+  background-color: #000;
+}
+header.abajo .line3__bars-menu{
+  background-color: #000;
 }
 main {
   display: grid;
@@ -423,6 +433,7 @@ footer{
 @media screen and (max-width: 760px){
   .bars__menu{
 display: inline;
+
   }
 
   header ul{
