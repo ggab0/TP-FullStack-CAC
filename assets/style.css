@@ -200,7 +200,7 @@ header ul li a{
 }
 
 .activeline1__bars-menu{
-  transform: rotate(45deg) translate(-1px, -2px); 
+  transform: rotate(45deg) translate(1px, -2px); 
   transform: scaleX(1px);
 }
 
@@ -210,7 +210,7 @@ header ul li a{
 }
 
 .activeline3__bars-menu{
-  transform: rotate(-45deg) translate(-0px, 1px);
+  transform: rotate(-45deg) translate(1.6px, 2.1px);
 }
 .zona1{
   position: relative;
