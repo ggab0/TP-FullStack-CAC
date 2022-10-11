@@ -133,7 +133,7 @@ a.selected{
 }
 
 .menu__side_move {
-  width: 250px;
+  width: 200px;
 }
 
 header.abajo{
@@ -172,7 +172,7 @@ header ul li a{
   font-family: helvetica;
   margin: 0 15px;
   text-decoration: none;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.425);
   letter-spacing: 2px;
   font-weight: 600;
   transition: 0.7s;
