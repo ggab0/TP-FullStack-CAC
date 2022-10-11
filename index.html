@@ -8,112 +8,104 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gudea:ital,wght@0,400;0,700;1,400&family=The+Nautigal:wght@700&display=swap"
-      rel="stylesheet"/>
-    	<script type="text/javascript">
-        window.addEventListener("scroll", function(){
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gudea:ital,wght@0,400;0,700;1,400&family=The+Nautigal:wght@700&display=swap" rel="stylesheet"/>
+    <script type="text/javascript">
+        window.addEventListener("scroll",  function(){
           var header = document.querySelector("header");
           header.classList.toggle("abajo",window.scrollY>0);
         })
-      </script>
-    </head>
-  <body id="body">
-    <header style="border-color: aqua;">
-      <a href="#" class="logo">COCO CLOCKS</a>
-      <nav>
-        
-      
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>   
-        </ul>
+    </script>
+  </head>
+<body id="body">
+  <header style="border-color: aqua;">
+  <a href="#" class="logo">COCO CLOCKS</a>
+  <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>   
+      </ul>
         <div class="bars__menu" id="btn_open">
-          <span class="line1__bars-menu"></span>
-          <span class="line2__bars-menu"></span>
-          <span class="line3__bars-menu"></span>
-        </div>
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+      </div>
         <script src="assets/script2.js"></script>
-      </nav>
-    </header>
-    <div class="menu__side" id="menu_side">
-        <div class="options__menu">	
-            <a href="#" class="selected">
-                <div class="option">
-                    <i class="fas fa-home" title="Inicio"></i>
-                    <h4>Inicio</h4>
-                </div>
+  </nav>
+  </header>
+  <div class="menu__side" id="menu_side">
+    <div class="options__menu">	
+        <a href="#" class="selected">
+          <div class="option">
+            <i class="fas fa-home" title="Inicio"></i>
+              <h4>Inicio</h4>
+          </div>
             <a href="#">
-                <div class="option">
-                    <i class="fas fa-video" title="Cursos"></i>
-                    <h4>Productos</h4>
-                </div>
+              <div class="option">
+                <i class="fas fa-video" title="Cursos"></i>
+                  <h4>Productos</h4>
+              </div>
             </a>
             <a href="#">
-                <div class="option">
-                    <i class="far fa-id-badge" title="Contacto"></i>
-                    <h4>Contacto</h4>
-                </div>
+              <div class="option">
+                <i class="far fa-id-badge" title="Contacto"></i>
+                  <h4>Contacto</h4>
+              </div>
             </a>
             <a href="#">
-                <div class="option">
-                    <i class="far fa-address-card" title="Nosotros"></i>
-                    <h4>Nosotros</h4>
-                </div>
+              <div class="option">
+                <i class="far fa-address-card" title="Nosotros"></i>
+                <h4>Nosotros</h4>
+              </div>
             </a>
+    </div>
+  </div>
+  <main>
+    <section class="zona1">
+      <div class="carousel">
+        <button class="carousel__button carousel__button--left"> <!-- __ means child-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Chevron_left.svg/768px-Chevron_left.svg.png">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="https://images.unsplash.com/photo-1516321099745-dd759b1ee63a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Image 1">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="http://3.bp.blogspot.com/-AHKvK4KhG1E/T-Wl6lDvWAI/AAAAAAAACqs/jM5bOWGoRUs/s1600/Pallas+cat+picture.jpg" alt="Image 2">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1772,w_3153,x_0,y_246/f_auto,q_auto,w_1100/v1554704439/shape/mentalfloss/90509-istock-89485687_0.jpg" alt="Image 3">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="http://i.huffpost.com/gadgets/slideshows/408304/slide_408304_5119498_free.jpg" alt="Image 4">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="https://s-i.huffpost.com/gadgets/slideshows/408304/slide_408304_5119508_free.jpg" alt="Image 5">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image school-talks-img-6" src="http://3.bp.blogspot.com/-_mB2gHAo2Yg/U4cEDreArmI/AAAAAAAAHn8/FOxJ-D-ABwo/s1600/pallas-cat-pet-awsome.jpg" alt="Image 6">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right"> <!-- -- means modifier-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chevron_right.svg/1024px-Chevron_right.svg.png" alt="right icon">
+        </button>
+
+        <div class="carousel__nav">  
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
         </div>
     </div>
-    <section class="zona1">
+      <script src="assets/script3.js"></script>
     </section>
-    <main>
-      <h1>Soy el main</h1>
-      <h2>Coco's Clocks</h2>
-      <div class="carrousel">
-        <div class="conteCarrousel">
-          <div class="itemCarrousel" id="itemCarrousel-1">
-            <div class="itemCarrouselTarjeta">A</div>
-            <div class="itemCarrouselArrows">
-              <a href="#itemCarrousel-3">
-                <i class="fas fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrousel-2">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="itemCarrousel" id="itemCarrousel-2">
-            <div class="itemCarrouselTarjeta">B</div>
-            <div class="itemCarrouselArrows">
-              <a href="#itemCarrousel-1">
-                <i class="fas fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrousel-3">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="itemCarrousel" id="itemCarrousel-3">
-            <div class="itemCarrouselTarjeta">C</div>
-            <div class="itemCarrouselArrows">
-              <a href="#itemCarrousel-2">
-                <i class="fas fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrousel-1">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="conteCarrouselController">
-          <a href="#itemCarrousel-1">1</a>
-          <a href="#itemCarrousel-2">2</a>
-          <a href="#itemCarrousel-3">3</a>
-        </div>
-      </div>
-    </main>
-    <footer>
+  </main>
+  <footer>
       <div class="container-footer-all">
       
         <div class="container-body">
@@ -181,9 +173,8 @@
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/887a835504.js"
-      crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
-    </body>
+  </footer>
+   <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+   <script src="assets/script.js"></script>
+</body>
 </html>

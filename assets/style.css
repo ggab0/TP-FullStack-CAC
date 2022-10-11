@@ -129,6 +129,7 @@ header .logo{
   transition: 1.5s;
   text-decoration: none;
 }
+/* Nav con hamb */
 nav{
   display: flex;
   justify-content: center;
@@ -203,49 +204,109 @@ header.abajo .line2__bars-menu{
 header.abajo .line3__bars-menu{
   background-color: #000;
 }
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+/* Carrousel */
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
+
+
+.carousel__slide {
+ width: 800px;
 }
-.middle-indicator{
-   position:absolute;
-   top:50%;
-   }
-  .middle-indicator-text{
-   font-size: 4.2rem;
-  }
-  a.middle-indicator-text{
-    color:white !important;
-  }
-.content-indicator{
-    width: 64px;
-    height: 64px;
-    background: none;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px; 
-  }
-    .indicators{
-  	visibility: hidden;
-  }
-footer{
+
+.carousel__image {
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+
+.school-talks-img-6 {
+  object-position: 50% 5%;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 700ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute; /* stack images on top of each other */
+  top: 0;
+  bottom: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button img:hover, .carousel__nav button:hover {
+  transform: scale(1.2);
+  transition: all ease-in 0.2s;
+}
+
+
+.carousel__button--left {
+  left: -40px; /* position away from image */
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__button img {
+  width: 30px;
+}
+
+.carousel__button:focus, .carousel__indicator:focus {
+outline: none;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  background: rgba(0,0,0,.3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0,0,0,.75);
+}
+
+
+
+/* Footer */
+  footer{
     width: 100%;
     background: #202020;
     color: white;   
@@ -358,3 +419,54 @@ display: inline;
     display: none;
     }
 }
+/* resize images for different screen sizes */
+@media all and (max-width: 900px) {
+  .carousel {
+      height: 300px;
+      max-width: 600px;
+  }
+  .carousel__slide {
+     width: 600px;
+     height: 300px;
+  }    
+} 
+@media all and (max-width: 720px) {
+  .carousel {
+      height: 250px;
+      max-width: 500px;
+  }
+  .carousel__slide {
+     width: 500px;
+     height: 250px;
+  }    
+} 
+@media all and (max-width: 600px) {
+  .carousel {
+      height: 200px;
+      max-width: 400px;
+  }
+  .carousel__slide {
+     width: 400px;
+     height: 200px;
+  }    
+} 
+@media all and (max-width: 485px) {
+  .carousel {
+      height: 150px;
+      max-width: 350px;
+  }
+  .carousel__slide {
+     width: 350px;
+     height: 150px;
+  }    
+} 
+@media all and (max-width: 400px) {
+  .carousel {
+      height: 120px;
+      max-width: 300px;
+  }
+  .carousel__slide {
+     width: 300px;
+     height: 120px;
+  }    
+} 
