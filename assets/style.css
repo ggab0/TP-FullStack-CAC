@@ -205,6 +205,9 @@ header.abajo .line3__bars-menu{
   background-color: #000;
 }
 /* logo 1 */
+svg,img {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
 .constellation {
 padding-top: 200px;
 display: flex;
@@ -217,6 +220,8 @@ justify-content: center;
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
+  background: radial-gradient(rgba(255, 255, 255, 0.539),rgba(255,255,255,0));
+  border-radius: 15px;
 }
 
 
