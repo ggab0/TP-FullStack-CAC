@@ -149,7 +149,7 @@ header ul li a{
   font-family: helvetica;
   margin: 0 15px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.425);
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
   font-weight: 600;
   transition: 0.7s;
@@ -204,6 +204,12 @@ header.abajo .line2__bars-menu{
 header.abajo .line3__bars-menu{
   background-color: #000;
 }
+/* logo 1 */
+.constellation {
+padding-top: 200px;
+display: flex;
+justify-content: center;
+}
 /* Carrousel */
 .carousel {
   position: relative;
@@ -221,7 +227,7 @@ header.abajo .line3__bars-menu{
 .carousel__image {
  height: 100%;
  width: 100%;
- object-fit: cover;
+ object-fit: scale-down;
 }
 
 .school-talks-img-6 {
