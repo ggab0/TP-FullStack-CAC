@@ -187,9 +187,15 @@ header ul li a{
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/omega.jpg");
+  background-image: url("https://media.revistagq.com/photos/5f1039e496c6999a6368606c/16:9/w_2560%2Cc_limit/OMEGA_131.63.41.21.03.001_wrist.jpg");
   background-size: cover;
   background-position: center center;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.zona1::-webkit-scrollbar {
+  display: none;
 }
 header.abajo .logo,
 header.abajo ul li a{
