@@ -273,6 +273,8 @@ p {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background: radial-gradient(rgba(255, 255, 255, 0.882),rgba(255,255,255,0));
   border-radius: 15px;
 }
