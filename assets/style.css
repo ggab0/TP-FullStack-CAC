@@ -242,6 +242,7 @@ resize: both;
 }
 .imagen {
   object-fit: scale-down;
+  overflow: hidden;
 }
 .descrip {
   padding: 10px;
@@ -287,6 +288,7 @@ p {
  object-fit: scale-down;
  display: flex;
  justify-content: center;
+ margin: auto;
 }
 
 .school-talks-img-6 {
