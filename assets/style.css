@@ -231,7 +231,7 @@ justify-content: center;
 display: flex;
 justify-content: center;
 align-items: center;
-background: radial-gradient(rgba(255, 255, 255, 0.882),rgba(255,255,255,0));
+background: radial-gradient(rgba(0, 0, 0, 0.882),rgba(255,255,255,0));
 border-radius: 15px;
 padding: 20px;
 max-height: 75%;
@@ -263,7 +263,7 @@ h1 {
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
-  color: rgb(16, 16, 16);
+  color: rgb(255, 255, 255);
 }
 /* Carrousel */
 .carousel {
@@ -275,7 +275,7 @@ p {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  background: radial-gradient(rgba(255, 255, 255, 0.882),rgba(255,255,255,0));
+  background: radial-gradient(rgba(0, 0, 0, 0.882),rgba(255,255,255,0));
   border-radius: 15px;
 }
 
