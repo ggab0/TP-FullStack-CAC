@@ -236,6 +236,7 @@ max-height: 75%;
 max-width: 75%;
 overflow: hidden;
 margin: 0 auto;
+resize: both;
 }
 .imagen {
   object-fit: cover;
@@ -505,7 +506,12 @@ display: inline;
   .carousel__slide {
      width: 400px;
      height: 200px;
-  }    
+  }
+  .imagenc {
+    margin:auto;
+    flex-direction: column;
+    overflow: auto;
+  }  
 } 
 @media all and (max-width: 485px) {
   .carousel {
