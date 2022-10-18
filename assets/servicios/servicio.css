@@ -137,3 +137,211 @@
     color: #242132;
   }
   
+
+
+
+
+  header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+  }
+  
+  .icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+  }
+  .icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+  }
+  .menu__side{
+    width: 0px;
+    height: 100%;
+    background: #00000062;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  /*Ocultar scroll para chrome, safari y opera*/
+  .menu__side::-webkit-scrollbar{
+    display: none;
+  }
+  /*Ocultar scroll para IE, Edge y Firefox*/
+  .menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: block;
+  }
+  .name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .name__page i{
+    width: 20px;
+    margin-right: 20px;
+  }
+  .options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+  }
+  .options__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+  }
+  .options__menu a:hover{
+    color: white;
+  }
+  .options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+  }
+  a.selected{
+    color: #fff;
+  }
+  .selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+  }
+  /*Clases para usar en JavaScript*/
+  .body_move {
+    margin-left:  0px;
+  }
+  .menu__side_move {
+    width: 200px;
+  }
+  header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+  }
+  header .logo{
+    position: relative;
+    color: rgb(112, 20, 20);
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+  }
+  /* nav*/
+  
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li{
+    list-style: none;
+  }
+  header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(17, 106, 179);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+  }
+  .bars__menu{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(6);
+    cursor: pointer;
+    display: none;
+  }
+  .bars__menu span {
+    display: block;
+    width: 10px;
+    height: 1px;
+    background: #d30a0a;
+    margin-top: 2px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  
+  }
+  .activeline1__bars-menu{
+    transform: rotate(45deg) translate(1px, -2px); 
+    transform: scaleX(1px);
+  }
+  .activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px; 
+  }
+  .activeline3__bars-menu{
+    transform: rotate(-45deg) translate(1.6px, 2.1px);
+  }
+  .zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://media.revistagq.com/photos/5f1039e496c6999a6368606c/16:9/w_2560%2Cc_limit/OMEGA_131.63.41.21.03.001_wrist.jpg")!important;
+    background-size: cover;
+    background-position: center center;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .zona1::-webkit-scrollbar {
+    display: none;
+  }
+  header.abajo .logo,
+  header.abajo ul li a{
+    color: #000;
+  }
+  header.abajo .line1__bars-menu{
+    background-color: #000;
+  }
+  header.abajo .line2__bars-menu{
+    background-color: #000;
+  }
+  header.abajo .line3__bars-menu{
+    background-color: #000;
+  }
