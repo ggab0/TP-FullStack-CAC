@@ -1,20 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestros Servicios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--Iconos Font Awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <!-- fuentes de google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gudea:ital,wght@0,400;0,700;1,400&family=The+Nautigal:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- Estilos -->
-    <link rel="stylesheet" href="assets/servicios/servicio.css" />
-    <link rel="stylesheet" href="assets/servicios/footer.css" />
+    <link rel="stylesheet" href="assets/servicios/servicios.css" />
     <script src="assets/script4.js"></script>
   </head>
-  <body>
 
+  <body id="body">
     <header>
       <a href="#" class="logo">COCO CLOCKS</a>
       <nav>
@@ -40,41 +45,36 @@
         <script src="assets/script2.js"></script>
       </nav>
     </header>
-  
+
     <div class="menu__side" id="menu_side">
       <div class="options__menu">
-        <a href="#" class="selected">
-          <div class="option">
-            <i class="fas fa-home" title="Inicio"></i>
-            <h4>Inicio</h4>
-          </div>
-          <a href="#">
-            <div class="option">
-              <i class="fas fa-video" title="Cursos"></i>
-              <h4>Productos</h4>
-            </div>
-          </a>
-          <a href="#">
-            <div class="option">
-              <i class="far fa-id-badge" title="Contacto"></i>
-              <h4>Contacto</h4>
-            </div>
-          </a>
-          <a href="#">
-            <div class="option">
-              <i class="far fa-address-card" title="Nosotros"></i>
-              <h4>Nosotros</h4>
-            </div>
-          </a>
+        <a href="index.html" class="selected">
+        <div class="option">
+          <i class="fas fa-home" title="Inicio"></i>
+          <h4>Inicio</h4>
+        </div>
+        <a href="servicios.html">
+        <div class="option">
+          <i class="fas fa-video" title="Cursos"></i>
+          <h4>Servicios</h4>
+        </div>
+        </a>
+        <a href="contacto.html">
+        <div class="option">
+          <i class="far fa-id-badge" title="Contacto"></i>
+          <h4>Contacto</h4>
+        </div>
+        </a>
+        <a href="nosotros.html">
+        <div class="option">
+          <i class="far fa-address-card" title="Nosotros"></i>
+          <h4>Nosotros</h4>
+        </div>
+        </a>
       </div>
-    </div> 
-    
-  
-
-
-
-
-    <section>
+    </div>
+<main>
+    <section class="zona1">
       <div class="row">
         <h2 class="section-heading">Nuestros Servicios</h2>
       </div>
@@ -147,90 +147,91 @@
         </div>
       </div>
     </section>
-
+  </main>
     <footer>
-        <div class="container-footer-all">
-          <div class="container-body">
-            <div class="colum1">
-              <h1>Mas informacion de la compañia</h1>
-              <p> Esta compañia se dedica a la venta de relojes. </p>
-              <br>
-              <div class="mapouter">
-                <div class="gmap_canvas">
-                  <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Buenos Aires&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                  <a href="https://mcpenation.com/">https://mcpenation.com</a>
-                </div>
-                <style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    width: 100%;
-                    height: 400px;
-                  }
-  
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    width: 100%;
-                    height: 400px;
-                  }
-  
-                  .gmap_iframe {
-                    height: 400px !important;
-                  }
-                </style>
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="colum1">
+            <h1>Mas informacion de la compañia</h1>
+            <p> Esta compañia se dedica a la venta de relojes. </p>
+            <br>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Buenos Aires&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href="https://mcpenation.com/">https://mcpenation.com</a>
               </div>
-            </div>
-            <div class="colum2">
-              <h1>Redes Sociales</h1>
-              <div class="row">
-                <img src="assets/icon/facebook.png" />
-                <label>Siguenos en Facebook</label>
-              </div>
-              <div class="row">
-                <img src="assets/icon/twitter.png" />
-                <label>Siguenos en Twitter</label>
-              </div>
-              <div class="row">
-                <img src="assets/icon/instagram.png" />
-                <label>Siguenos en Instagram</label>
-              </div>
-              <div class="row">
-                <img src="assets/icon/google-plus.png" />
-                <label>Siguenos en Google Plus</label>
-              </div>
-              <div class="row">
-                <img src="assets/icon/pinterest.png" />
-                <label>Siguenos en Pinterest</label>
-              </div>
-            </div>
-            <div class="colum3">
-              <h1>Informacion Contactos</h1>
-              <div class="row2">
-                <img src="assets/icon/house.png" />
-                <label>CABA</label>
-              </div>
-              <div class="row2">
-                <img src="assets/icon/smartphone.png" />
-                <label>+1-23456789</label>
-              </div>
-              <div class="row2">
-                <img src="assets/icon/contact.png" />
-                <label>maildeejemplo@gmail.com</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-footer">
-          <div class="footer">
-            <div class="copyright"> © 2022 Todos los Derechos Reservados | <a href="">CCCLOCKS</a>
-            </div>
-            <div class="information">
-              <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 100%;
+                  height: 400px;
+                }
 
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 100%;
+                  height: 400px;
+                }
+
+                .gmap_iframe {
+                  height: 400px !important;
+                }
+              </style>
+            </div>
+          </div>
+          <div class="colum2">
+            <h1>Redes Sociales</h1>
+            <div class="row">
+              <img src="assets/icon/facebook.png" />
+              <label>Siguenos en Facebook</label>
+            </div>
+            <div class="row">
+              <img src="assets/icon/twitter.png" />
+              <label>Siguenos en Twitter</label>
+            </div>
+            <div class="row">
+              <img src="assets/icon/instagram.png" />
+              <label>Siguenos en Instagram</label>
+            </div>
+            <div class="row">
+              <img src="assets/icon/google-plus.png" />
+              <label>Siguenos en Google Plus</label>
+            </div>
+            <div class="row">
+              <img src="assets/icon/pinterest.png" />
+              <label>Siguenos en Pinterest</label>
+            </div>
+          </div>
+          <div class="colum3">
+            <h1>Informacion Contactos</h1>
+            <div class="row2">
+              <img src="assets/icon/house.png" />
+              <label>CABA</label>
+            </div>
+            <div class="row2">
+              <img src="assets/icon/smartphone.png" />
+              <label>+1-23456789</label>
+            </div>
+            <div class="row2">
+              <img src="assets/icon/contact.png" />
+              <label>maildeejemplo@gmail.com</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="copyright"> © 2022 Todos los Derechos Reservados | <a href="">CCCLOCKS</a>
+          </div>
+          <div class="information">
+            <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+          </div>
+        </div>
+      </div>  
+    </footer>
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
