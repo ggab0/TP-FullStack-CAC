@@ -231,7 +231,7 @@ justify-content: center;
 display: flex;
 justify-content: center;
 align-items: center;
-background: radial-gradient(rgba(0, 0, 0, 10),rgba(255,255,255,0));
+background: rgba(0, 0, 0, 0.757);
 border-radius: 15px;
 padding: 20px;
 max-height: 75%;
@@ -243,6 +243,7 @@ resize: both;
 .imagen {
   object-fit: scale-down;
   overflow: hidden;
+  width: 100%;
 }
 .descrip {
   padding: 10px;
@@ -275,7 +276,7 @@ p {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  background: radial-gradient(rgba(0, 0, 0, 0.882),rgba(255,255,255,0));
+  background: rgba(0, 0, 0, 0.757);
   border-radius: 15px;
 }
 
