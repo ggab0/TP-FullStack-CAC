@@ -227,7 +227,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 }
 .column {
   width: 100%;
@@ -246,13 +245,19 @@ section {
   cursor: pointer;
   transition: 0.5s;
 }
-h2,h1 {
+h2,h1,h3 {
   color: #c70408;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 0.4));
 }
 h2 {
+  padding-top: 50px;
   font-size: xx-large;
   margin-block-start: 100px;
   margin-block-end: 50px;
+  margin: auto;
 }
 h3 {
   font-size: 20px;
