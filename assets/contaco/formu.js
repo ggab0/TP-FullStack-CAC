@@ -80,6 +80,10 @@ const validarPassword2 = () => {
 	}
 }
 
+const options = {
+	method: 'GET',
+};
+
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
 	input.addEventListener('blur', validarFormulario);
@@ -100,6 +104,10 @@ formulario.addEventListener('submit', (e) => {
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
+	fetch('http://api.ipify.io/?format=json', options)
+	.then(response => response.json())
+	.then(response => window.alert("Formulario Cargado con la ip: " + response.ip))
+	.catch(err => console.error(err));
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
