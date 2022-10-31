@@ -240,14 +240,14 @@ img {
 h1 {
   padding: 1vh;
   text-align: center;
-  font-size: 50px;
+  font-size: 5vh;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #c70408;
   filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 0.4));
 }
 p {
-  font-size: 30px;
+  font-size: 3vh;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
